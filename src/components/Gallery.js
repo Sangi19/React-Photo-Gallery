@@ -20,7 +20,7 @@ export default function Gallery({galleryImages}) {
         setOpenModal(false)
     }
     const prevSlide=(index)=> {
-        setOpenModal(false)
+        slideNumber===0? setSlideNumber[galleryImages.length-1]: setSlideNumber(slideNumber-1)
     }
 
     const nextSlide=(index)=> {
